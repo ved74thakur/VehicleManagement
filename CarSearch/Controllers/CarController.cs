@@ -24,7 +24,7 @@ namespace CarSearch.Controllers
         }
 
         [HttpPost("GetCarsByFilterAsync")]
-        public async Task<IEnumerable<CarFilterResultDto>> GetCarsByFilterAsync(GetCarFilterDto filter)
+        public async Task<IEnumerable<GetCarFilterDto>> GetCarsByFilterAsync(GetCarFilterDto filter)
         {
             return await _carService.GetFilteredCarsAsync(filter);
         }

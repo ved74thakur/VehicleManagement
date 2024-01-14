@@ -7,9 +7,9 @@ namespace CarSearch.Services
     {
         Task<IEnumerable<Car>> GetCarsAsync();
 
-        //Task<IEnumerable<GetCarFilterDto>> GetFilteredCarsAsync(GetCarFilterDto filter);
+        Task<IEnumerable<GetCarFilterDto>> GetFilteredCarsAsync(GetCarFilterDto filter);
 
-        Task<IEnumerable<CarFilterResultDto>> GetFilteredCarsAsync(GetCarFilterDto filter);
+        //Task<IEnumerable<CarFilterResultDto>> GetFilteredCarsAsync(GetCarFilterDto filter);
         Task<Car> GetCarByIdAsync(Guid id);
         Task<Car> CreateCarAsync(Car car);
 
